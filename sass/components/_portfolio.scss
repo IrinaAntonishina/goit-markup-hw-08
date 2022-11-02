@@ -1,0 +1,107 @@
+.button > .button-list {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .portfolio-btn {
+    border: 0px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--back-color);
+    cursor: pointer;
+    transition: var(--transition-background-color), var(--transition-color);
+    &:hover,
+    &:focus {
+    background-color: var(--color-accent);
+    color: var(--text-white);
+  }
+  }
+  .btn-item > .fbtn {
+    padding: 6px 25px;
+    background-color: var(--color-accent);
+    color: var(--text-white);
+  }
+  
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .portfolio-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  
+  .portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--color-title);
+    margin-bottom: 4px;
+  }
+  .portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--color-text);
+  }
+  
+  .link-text {
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding: 20px 24px;
+  }
+  
+  .portfolio-link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  }
+  
+  .overlay {
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay-text {
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background: rgba(33, 150, 243, 0.9);
+    align-items: center;
+    justify-content: center;
+    .portfolio-link:hover &,
+  .portfolio-link:focus & {
+    transform: translateY(0);
+  }
+  }

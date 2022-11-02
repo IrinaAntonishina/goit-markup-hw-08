@@ -1,0 +1,19 @@
+.btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-white);
+    background: var(--color-accent);
+    border: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition-background-color);
+      &:hover,
+      &:focus {
+      background-color: var(--color-button);
+    }
+  
+  }

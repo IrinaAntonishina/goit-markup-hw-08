@@ -1,0 +1,83 @@
+.header--navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header {
+    border-bottom: 1px solid #ececec;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .logo--navigation {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--logo-header);
+  }
+  
+  .page-menu {
+    display: flex;
+    margin-right: 318px;
+    gap: 50px;
+  }
+  
+  .connect-menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: var(--transition-color);
+    &:hover,
+    &:focus {
+    color: var(--color-accent);
+  }
+  }
+ 
+  .page-menu .page-menu__link.accent {
+    color: var(--color-accent);
+  }
+  
+  .page-menu__link {
+    color: var(--color-title);
+    position: relative;
+  }
+  
+  .accent::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--color-accent);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  .connect-menu__item .mail {
+    margin-bottom: 0px;
+  }
+  
+  .connect-menu__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    color: var(--color-text);
+  }
+  
+  .connect-menu__link > .connect-menu__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
