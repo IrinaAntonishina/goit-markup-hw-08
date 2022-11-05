@@ -1,45 +1,49 @@
 .join {
+  margin-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
     display: flex;
     flex-direction: column;
+    text-align: start;
   }
-  
-  .join-title {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  
-  .join-list {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .join-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .join-item {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    padding: 12px;
-    transition: var(--transition-background-color);
-    &:hover,
-    &:focus {
+}
+
+.join-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.join-list {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  transition: var(--transition-background-color);
+  &:hover,
+  &:focus {
     background-color: var(--color-accent);
   }
-  }
-  
-  .join-icon {
-    fill: var(--text-white);
-  }
-  
-  
+}
+
+.join-icon {
+  fill: var(--text-white);
+}
