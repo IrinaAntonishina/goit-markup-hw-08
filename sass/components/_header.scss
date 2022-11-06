@@ -1,3 +1,6 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header--navigation {
   @media screen and (min-width: 768px) {
     min-height: 80px;
@@ -6,20 +9,26 @@
     justify-content: center;
   }
 }
-.header {
-  border-bottom: 1px solid #ececec;
+.header-mobile-menu {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
 .navigation {
+  display: flex;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
 }
+
 .logo--navigation {
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-right: 276px;
   color: var(--logo-header);
   @media screen and (min-width: 768px) {
     margin-right: 88px;
@@ -33,8 +42,48 @@
   }
 }
 
+.navigation__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  & .navigation__icon-close {
+    display: none;
+  }
+  &.is-open .navigation__icon-close {
+    display: block;
+  }
+  &.is-open .navigation__icon-menu {
+    display: none;
+  }
+}
+.mobile-menu-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 796px;
+    background-color: #ffffff;
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
 .page-menu {
-  display: none;
   @media screen and (min-width: 768px) {
     display: flex;
     margin-right: 96px;
@@ -73,7 +122,6 @@
 }
 
 .connect-menu {
-  display: none;
   @media screen and (min-width: 768px) {
     padding-top: 21px;
     padding-bottom: 21px;

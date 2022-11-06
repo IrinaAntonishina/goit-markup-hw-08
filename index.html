@@ -24,45 +24,71 @@
     <!--Header-->
     <header class="header">
       <div class="container header--navigation">
-        <nav class="navigation">
+        <div class="header-mobile-menu">
           <a class="logo logo--navigation" href="index.html" lang="en"
             ><span class="logo--blue">Web</span>Studio</a
           >
-          <ul class="page-menu">
-            <li class="page-menu__item">
-              <a class="page-menu__link link accent" href=""> Студія </a>
-            </li>
-            <li class="page-menu__item">
-              <a class="page-menu__link link" href="./portfolio.html"
-                >Портфоліо</a
+          <button
+            type="button"
+            class="navigation__button is-open"
+            aria-expanded="false"
+            aria-controls="mobile-menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="перемикач мобільного меню">
+              <use
+                href="./img/icons.svg#icon-close-mobile"
+                class="navigation__icon-close"
+              ></use>
+              <use
+                href="./img/icons.svg#icon-menu-mobile"
+                class="navigation__icon-menu"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="mobile-menu-container is-open"
+          data-menu
+          id="mobile-menu-container"
+        >
+          <nav class="navigation">
+            <ul class="page-menu">
+              <li class="page-menu__item">
+                <a class="page-menu__link link accent" href=""> Студія </a>
+              </li>
+              <li class="page-menu__item">
+                <a class="page-menu__link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="page-menu__item">
+                <a class="page-menu__link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="connect-menu">
+            <li class="connect-menu__item">
+              <a
+                class="connect-menu__link link mail"
+                href="mailto:info@devstudio.com"
+                ><svg class="connect-menu__icon" width="16" height="12">
+                  <use href="./img/icons.svg#icon-envelope"></use>
+                </svg>
+
+                info@devstudio.com</a
               >
             </li>
-            <li class="page-menu__item">
-              <a class="page-menu__link link" href="">Контакти</a>
+            <li class="connect-menu__item">
+              <a class="connect-menu__link link" href="tel:+380961111111"
+                ><svg class="connect-menu__icon" width="10" height="16">
+                  <use href="./img/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="connect-menu">
-          <li class="connect-menu__item">
-            <a
-              class="connect-menu__link link mail"
-              href="mailto:info@devstudio.com"
-              ><svg class="connect-menu__icon" width="16" height="12">
-                <use href="./img/icons.svg#icon-envelope"></use>
-              </svg>
-
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="connect-menu__item">
-            <a class="connect-menu__link link" href="tel:+380961111111"
-              ><svg class="connect-menu__icon" width="10" height="16">
-                <use href="./img/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <!--Hero-->
@@ -625,6 +651,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
