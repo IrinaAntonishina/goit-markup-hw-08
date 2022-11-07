@@ -27,7 +27,7 @@
           <nav class="navigation">
             <a class="logo logo--navigation" href="index.html" lang="en"
             ><span class="logo--blue">Web</span>Studio</a>
-            <button type="button" class="mobile-menu__button">
+            <button type="button" class="mobile-menu__button" data-menu-open>
             <svg width="40" height="40" aria-label="перемикач мобільного меню">
               <use
                 href="./img/icons.svg#icon-menu-mobile"
@@ -73,7 +73,7 @@
         </div>
       </div>
       
-      <div class="mobile-menu__container">
+      <div class="mobile-menu__container is-hidden" data-menu>
         <div class="mobile-menu-flex">
           <div class="mobile-menu__navigation">
             <ul class="mobile-menu__pages">
@@ -117,7 +117,7 @@
           </div>
         </div>
         
-        <button type="button" class="mobile-menu__button-close">
+        <button type="button" class="mobile-menu__button-close" data-menu-close>
           <svg width="40" height="40" aria-label="перемикач мобільного меню">
             <use
               href="./img/icons.svg#icon-close-mobile"
@@ -670,16 +670,14 @@
               id="privacy"
               class="privacy-input visually-hidden"
             />
-            <div class="conteiner-privacy-label">
-              <label class="privacy-label" for="privacy">
+            <label class="privacy-label" for="privacy">
                 <span class="check">
                   <svg class="check-icon" width="11" height="8">
                     <use href="./img/icons.svg#icon-check"></use></svg
                 ></span>
                 Погоджуюся з розсилкою та приймаю
-              </label>
-              <a href="#" class="privacy-link">Умови договору</a>
-            </div>
+            </label>
+            <a href="#" class="privacy-link">Умови договору</a>
           </div>
           <button class="form-button btn" type="submit">Відправити</button>
         </form>

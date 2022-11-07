@@ -4,158 +4,159 @@
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-title);
- 
-@media screen and (min-width:1200px){ 
-  line-height: 1.15;
-}  
+  letter-spacing: 0.03em;
+  color: var(--color-title);
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
   }
-  .form-field {
-    margin-bottom: 10px;
-  }
-  
-  .textarea-field {
-    margin-bottom: 20px;
-  }
-  .form-input {
-    display: block;
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(163, 105, 105, 0.2);
-    border-radius: 4px;
-    padding-left: 42px;
-    outline: transparent;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    &:hover,
-    &:focus {
+}
+.form-field {
+  margin-bottom: 10px;
+}
+
+.textarea-field {
+  margin-bottom: 20px;
+}
+.form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(163, 105, 105, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  &:hover,
+  &:focus {
     border: 1px solid var(--color-accent);
-    border-radius: 4px;  
+    border-radius: 4px;
   }
-  }
-  
-  .form-input-icon {
-    position: relative;
-  }
-  
-  .icon-form {
-    top: 50%;
-    left: 12px;
-    position: absolute;
-    display: inline-block;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      .form-input:hover + &,
+}
+
+.form-input-icon {
+  position: relative;
+}
+
+.icon-form {
+  top: 50%;
+  left: 12px;
+  position: absolute;
+  display: inline-block;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .form-input:hover + &,
   .form-input:focus + & {
     fill: var(--color-accent);
   }
-  }
-  .form-textarea {
-    padding: 12px 16px;
-    width: 100%;
-    height: 120px;
-    resize: none;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    &::placeholder {
-      font-size: 12px;
-      line-height: 1.17;
-      letter-spacing: 0.01em;
-      color: var(--color-placeholder);
-    }
-  }
-  
-  .form-label {
-    display: inline-block;
-    margin-bottom: 4px;
+}
+.form-textarea {
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  &::placeholder {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--color-text);
-    
+    color: var(--color-placeholder);
   }
+}
 
-  .privacy {
-    margin-bottom: 30px;
+.form-label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+}
+
+.privacy {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
   }
-  
-  .privacy-label {
-    margin-right: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--color-text);
-    cursor: pointer;
+}
 
-    @media screen and (min-width:1200px){
-      font-size: 14px;
-      line-height: 1.71; 
-      margin-right: 3px;
-    }  
-  }
-  .privacy-link {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-decoration-line: underline;
-    color: var(--color-accent);
+.privacy-label {
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+  cursor: pointer;
 
-
-    @media screen and (min-width:1200px){
-      font-size: 14px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
     line-height: 1.71;
-    }   
+    margin-right: 3px;
   }
-  .conteiner-privacy-label {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+}
+.privacy-link {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--color-accent);
 
-    @media screen and (min-width:1200px){
-      justify-content: center;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
-  
-  .check {
-    margin-right: 8px;
-    position: relative;
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    border: 2px solid var(--color-title);
-    border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .privacy-input:focus + .privacy-label span {
-    border: 2px solid var(--color-title);
-  }
+}
+.conteiner-privacy-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
-  .check-icon {
-    fill: var(--text-white);
-    position: absolute;
-    top: 50%;
-    left: 2px;
-    transform: translateY(-50%);
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
   }
-  .privacy-input:checked + .privacy-label .check {
-    border: transparent;
-    background-color: var(--color-accent);
-  }
-  .privacy-input:checked + .privacy-label .check-icon {
-    left: 3px;
-  }
-  
-  
-  .form-button {
-    margin: 0 auto;
-    padding: 10px 52px;
-    display: flex;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-  
-  
+}
+
+.check {
+  margin-right: 8px;
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-title);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.privacy-input:focus + .privacy-label span {
+  border: 2px solid var(--color-title);
+}
+
+.check-icon {
+  fill: var(--text-white);
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+}
+.privacy-input:checked + .privacy-label .check {
+  border: transparent;
+  background-color: #2196f3;
+}
+.privacy-input:checked + .privacy-label .check-icon {
+  left: 3px;
+}
+
+.form-button {
+  margin: 0 auto;
+  padding: 10px 52px;
+  display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
