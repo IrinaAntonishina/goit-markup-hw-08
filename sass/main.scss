@@ -6,6 +6,7 @@
 @import "./layouts/title";
 
 @import "./components/header";
+@import "./components/mobile-menu";
 @import "./components/hero";
 @import "./components/feature";
 @import "./components/projects";
@@ -19,9 +20,7 @@
 @import "./layouts/modal";
 @import "./components/modal-form";
 
-
 @import "./components/portfolio";
-
 
 @import "./utils/hidden";
 @import "./utils/vars";

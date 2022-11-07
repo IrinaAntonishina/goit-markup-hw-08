@@ -24,35 +24,17 @@
     <!--Header-->
     <header class="header">
       <div class="container header--navigation">
-        <div class="header-mobile-menu">
-          <a class="logo logo--navigation" href="index.html" lang="en"
-            ><span class="logo--blue">Web</span>Studio</a
-          >
-          <button
-            type="button"
-            class="navigation__button is-open"
-            aria-expanded="false"
-            aria-controls="mobile-menu-container"
-            data-menu-button
-          >
+          <nav class="navigation">
+            <a class="logo logo--navigation" href="index.html" lang="en"
+            ><span class="logo--blue">Web</span>Studio</a>
+            <button type="button" class="mobile-menu__button">
             <svg width="40" height="40" aria-label="перемикач мобільного меню">
-              <use
-                href="./img/icons.svg#icon-close-mobile"
-                class="navigation__icon-close"
-              ></use>
               <use
                 href="./img/icons.svg#icon-menu-mobile"
                 class="navigation__icon-menu"
               ></use>
             </svg>
-          </button>
-        </div>
-        <div
-          class="mobile-menu-container is-open"
-          data-menu
-          id="mobile-menu-container"
-        >
-          <nav class="navigation">
+            </button>
             <ul class="page-menu">
               <li class="page-menu__item">
                 <a class="page-menu__link link accent" href=""> Студія </a>
@@ -89,6 +71,58 @@
             </li>
           </ul>
         </div>
+      </div>
+      
+      <div class="mobile-menu__container">
+        <div class="mobile-menu-flex">
+          <div class="mobile-menu__navigation">
+            <ul class="mobile-menu__pages">
+              <li class="mobile-menu__pages-item">
+                <a class="mobile-menu__pages-link link accent" href="./index.html"> Студія </a>
+              </li>
+              <li class="mobile-menu__pages-item">
+                <a class="mobile-menu__pages-link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-menu__pages-item">
+                <a class ="mobile-menu__pages-link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-menu-button">
+            <ul class="mobile-menu__contacts">
+              <li class="mobile-menu__contacts-item">
+                <a class="mobile-menu__contacts-link tel" href="tel:+380961111111"
+                  >
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobile-menu__contacts-item">
+                <a
+                  class="mobile-menu__contacts-link-mail "
+                  href="mailto:info@devstudio.com"
+                  >
+                  info@devstudio.com</a
+                >
+              </li>
+              
+            </ul>
+            <ul class="mobile-menu__soc-list">
+              <li class="mobile-menu__soc-item"><a href="#" class="mobile-menu__soc-link">Instagram</a></li>
+              <li class="mobile-menu__soc-item"><a href="#" class="mobile-menu__soc-link">Twitter</a></li>
+              <li class="mobile-menu__soc-item"><a href="#" class="mobile-menu__soc-link">Facebook</a></li>
+              <li class="mobile-menu__soc-item"><a href="#" class="mobile-menu__soc-link">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <button type="button" class="mobile-menu__button-close">
+          <svg width="40" height="40" aria-label="перемикач мобільного меню">
+            <use
+              href="./img/icons.svg#icon-close-mobile"
+              class="mobile-menu__icon-close"
+            ></use></svg></button>
       </div>
     </header>
     <!--Hero-->

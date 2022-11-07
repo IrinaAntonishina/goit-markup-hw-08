@@ -117,16 +117,9 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header-mobile-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 .navigation {
   display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .navigation {
@@ -157,50 +150,12 @@ img {
   }
 }
 
-.navigation__button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  width: 40px;
-  height: 40px;
-}
-@media screen and (min-width: 768px) {
-  .navigation__button {
-    display: none;
-  }
-}
-.navigation__button .navigation__icon-close {
-  display: none;
-}
-.navigation__button.is-open .navigation__icon-close {
-  display: block;
-}
-.navigation__button.is-open .navigation__icon-menu {
+.page-menu {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
-  .mobile-menu-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 796px;
-    background-color: #ffffff;
-  }
-  .mobile-menu-container.is-open {
-    display: block;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mobile-menu-container {
-    display: flex;
-  }
+.connect-menu {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -231,8 +186,14 @@ img {
   color: var(--color-title);
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .page-menu__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
-.accent::after {
+.page-menu__link.accent::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -244,6 +205,9 @@ img {
   overflow: hidden;
 }
 
+.connect-menu {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .connect-menu {
     padding-top: 21px;
@@ -296,6 +260,142 @@ img {
 .connect-menu__link > .connect-menu__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.mobile-menu__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
+.mobile-menu__container {
+  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 48px 40px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__container {
+    display: none;
+  }
+}
+
+.mobile-menu-flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.mobile-menu__button-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+}
+.mobile-menu__button-close:hover, .mobile-menu__button-close:focus {
+  fill: var(--color-accent);
+}
+
+.mobile-menu__pages-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-title);
+}
+.mobile-menu__pages-link:hover, .mobile-menu__pages-link:focus {
+  color: var(--color-accent);
+}
+
+.mobile-menu__pages-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__pages-link.accent {
+  color: var(--color-accent);
+}
+.mobile-menu__pages-link.accent::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.mobile-menu__pages {
+  margin-bottom: 30px;
+}
+
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-menu__contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__contacts-link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+.mobile-menu__contacts-link.tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--color-accent);
+}
+
+.mobile-menu__soc-list {
+  display: flex;
+  gap: 10px;
+}
+
+.mobile-menu__soc-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu__soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--color-accent);
 }
 
 .hero {
