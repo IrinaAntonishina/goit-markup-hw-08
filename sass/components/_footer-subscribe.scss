@@ -1,8 +1,8 @@
-.subscribe {
-  @media screen and (min-width: 1200px) {
-    margin-left: auto;
-  }
-}
+// .subscribe {
+//   @media screen and (min-width: 1200px) {
+//     margin-left: auto;
+//   }
+// }
 .subscribe-form {
   display: flex;
   flex-direction: column;
@@ -28,8 +28,7 @@
   margin-bottom: 20px;
   padding-left: 16px;
   padding-right: 16px;
-  margin-right: 12px;
-  min-width: 358px;
+  min-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -44,8 +43,13 @@
     letter-spacing: 0.03em;
     color: var(--color-clarity);
   }
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
+    min-width: 358px;
+    margin-right: 12px;
   }
 }
 

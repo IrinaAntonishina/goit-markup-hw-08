@@ -405,6 +405,7 @@ img {
 }
 
 .hero {
+  margin: 0 auto;
   padding: 118px 0px;
   background-color: var(--backcolor-grey);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-mobile-1x.jpg);
@@ -455,6 +456,11 @@ img {
   color: var(--text-white);
   margin: 0px auto 30px auto;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     max-width: 696px;
@@ -480,7 +486,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-with: 1200px) {
+@media screen and (min-width: 1200px) {
   .feature {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -814,6 +820,7 @@ img {
   .footer-flex-container {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 60px;
   }
 }
 
@@ -874,6 +881,11 @@ img {
   text-align: center;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .address {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .address {
     flex-direction: column;
@@ -885,6 +897,11 @@ img {
 .join {
   margin-bottom: 60px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .join {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .join {
@@ -933,12 +950,6 @@ img {
   fill: var(--text-white);
 }
 
-@media screen and (min-width: 1200px) {
-  .subscribe {
-    margin-left: auto;
-  }
-}
-
 .subscribe-form {
   display: flex;
   flex-direction: column;
@@ -970,8 +981,7 @@ img {
   margin-bottom: 20px;
   padding-left: 16px;
   padding-right: 16px;
-  margin-right: 12px;
-  min-width: 358px;
+  min-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1001,9 +1011,16 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-clarity);
 }
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    min-width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe-input {
     margin-bottom: 0;
+    min-width: 358px;
+    margin-right: 12px;
   }
 }
 
